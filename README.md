@@ -1,6 +1,7 @@
 # marcador_tranca
 
-A new Flutter project.
+Marcador de pontos para jogo de tranca feito em flutter.
+
 
 ## Getting Started
 
