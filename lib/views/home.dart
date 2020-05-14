@@ -100,11 +100,11 @@ class _HomePageState extends State<HomePage> {
                   title: 'Pontuação',
                   message: 'Insira pontuação do ${player.name}!',
                   confirm: () {
+                    if (_pontosController.text.isNotEmpty){
                     setState(() {
                       player.score =
                           player.score + int.parse(_pontosController.text);
-                    });
-                    print(player.score.toString());
+                    });}
                     _pontosController.clear();
                     if (player.score >= 2000) {
                       _showDialog(
